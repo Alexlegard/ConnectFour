@@ -1,0 +1,56 @@
+body {
+	margin:0;
+}
+
+/* Header styles */
+.header {
+	background-color:lightblue;
+	border-bottom:1px solid black;
+	padding:1em;
+}
+
+.title {
+	/* Press Start 2p */
+	font-family: 'Press Start 2P', cursive;
+}
+
+/* Main styles */
+
+.main {
+	padding:1em;
+}
+
+.instructions {
+	margin-bottom:1em;
+}
+
+.game {
+	
+	margin-top:5em;
+	margin-left:5em;
+}
+
+.board {
+	width: 280px; /* Each square is 40px by 40px */
+	height: 240px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	background-color: blue;
+}
+
+.board div {  
+	margin:3px;
+	border-radius:20px 
+}
+
+.square {
+	background-color:white;
+}
+
+.restart {
+	border:1px solid black;
+	background:red;
+	padding:1em;
+	color:white;
+}

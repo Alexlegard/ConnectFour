@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Connect 4</title>
+		<script type="text/javascript" src="connectfour.js"></script>
+		<link rel="stylesheet" href="connectfour.css">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<header class="header">
+			<div class="header__link">
+				<a href="http://alexlegard.ca/">Home</a>
+			</div>
+			<div class="header__title">
+				<h1 class="title">Connect 4</h1>
+			</div>
+			
+			<div class="instructions">
+				<p>Instructions: Red and yellow take turns dropping tiles into the game board.
+					Click a column to drop a tile in that column. The winner is the first player
+					to get four tiles in a row - horizontally, vertically, or diagonally.</p>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="game">
+				<p class="currentplayer" id="currentplayer"><span style="color:red">Red</span> to move.</p>
+			
+				<div class="board">
+					<!-- 1st row (top) -->
+					<div id="square0" class="square" onclick="squareClick(1)"></div>
+					<div id="square1" class="square" onclick="squareClick(2)"></div>
+					<div id="square2" class="square" onclick="squareClick(3)"></div>
+					<div id="square3" class="square" onclick="squareClick(4)"></div>
+					<div id="square4" class="square" onclick="squareClick(5)"></div>
+					<div id="square5" class="square" onclick="squareClick(6)"></div>
+					<div id="square6" class="square" onclick="squareClick(7)"></div>
+					
+					<!-- 2nd row -->
+					<div id="square7" class="square" onclick="squareClick(1)"></div>
+					<div id="square8" class="square" onclick="squareClick(2)"></div>
+					<div id="square9" class="square" onclick="squareClick(3)"></div>
+					<div id="square10" class="square" onclick="squareClick(4)"></div>
+					<div id="square11" class="square" onclick="squareClick(5)"></div>
+					<div id="square12" class="square" onclick="squareClick(6)"></div>
+					<div id="square13" class="square" onclick="squareClick(7)"></div>
+					
+					<!-- 3rd row -->
+					<div id="square14" class="square" onclick="squareClick(1)"></div>
+					<div id="square15" class="square" onclick="squareClick(2)"></div>
+					<div id="square16" class="square" onclick="squareClick(3)"></div>
+					<div id="square17" class="square" onclick="squareClick(4)"></div>
+					<div id="square18" class="square" onclick="squareClick(5)"></div>
+					<div id="square19" class="square" onclick="squareClick(6)"></div>
+					<div id="square20" class="square" onclick="squareClick(7)"></div>
+					
+					<!-- 4th row -->
+					<div id="square21" class="square" onclick="squareClick(1)"></div>
+					<div id="square22" class="square" onclick="squareClick(2)"></div>
+					<div id="square23" class="square" onclick="squareClick(3)"></div>
+					<div id="square24" class="square" onclick="squareClick(4)"></div>
+					<div id="square25" class="square" onclick="squareClick(5)"></div>
+					<div id="square26" class="square" onclick="squareClick(6)"></div>
+					<div id="square27" class="square" onclick="squareClick(7)"></div>
+					
+					<!-- 5th row -->
+					<div id="square28" class="square" onclick="squareClick(1)"></div>
+					<div id="square29" class="square" onclick="squareClick(2)"></div>
+					<div id="square30" class="square" onclick="squareClick(3)"></div>
+					<div id="square31" class="square" onclick="squareClick(4)"></div>
+					<div id="square32" class="square" onclick="squareClick(5)"></div>
+					<div id="square33" class="square" onclick="squareClick(6)"></div>
+					<div id="square34" class="square" onclick="squareClick(7)"></div>
+					
+					<!-- 6th row -->
+					<div id="square35" class="square" onclick="squareClick(1)"></div>
+					<div id="square36" class="square" onclick="squareClick(2)"></div>
+					<div id="square37" class="square" onclick="squareClick(3)"></div>
+					<div id="square38" class="square" onclick="squareClick(4)"></div>
+					<div id="square39" class="square" onclick="squareClick(5)"></div>
+					<div id="square40" class="square" onclick="squareClick(6)"></div>
+					<div id="square41" class="square" onclick="squareClick(7)"></div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
